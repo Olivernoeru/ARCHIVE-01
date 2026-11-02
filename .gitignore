@@ -1,0 +1,17 @@
+node_modules/
+.env
+*.env
+.env.*
+dist/
+build/
+
+# Logs and temporary files (do not back up)
+*.log
+_log*
+_tmp_server*
+output.txt
+ps-test.txt
+build.*.log
+
+# Non-scoped duplicate archive directory (typo; required scope is UI-REFERENCE/)
+UI-REFERANCE/

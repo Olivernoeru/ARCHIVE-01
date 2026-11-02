@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-tertiary-fixed-variant": "#354d2e",
+        "surface": "#fbf9f2",
+        "primary-container": "#302e2f",
+        "on-error-container": "#93000a",
+        "surface-tint": "#605e5f",
+        "primary": "#1b191a",
+        "error-container": "#ffdad6",
+        "on-primary-fixed": "#1d1b1c",
+        "on-primary": "#ffffff",
+        "on-secondary-container": "#65625d",
+        "surface-container-high": "#e9e8e1",
+        "primary-fixed": "#e6e1e2",
+        "surface-dim": "#dbdad3",
+        "secondary-fixed-dim": "#cac6c0",
+        "primary-fixed-dim": "#cac5c6",
+        "outline": "#7b7579",
+        "on-tertiary": "#ffffff",
+        "on-surface": "#1b1c18",
+        "secondary-fixed": "#e7e2dc",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary-fixed": "#1d1b18",
+        "on-error": "#ffffff",
+        "tertiary-fixed": "#cdebc1",
+        "tertiary-fixed-dim": "#b2cfa7",
+        "on-surface-variant": "#4a4549",
+        "on-primary-fixed-variant": "#494647",
+        "outline-variant": "#ccc4c9",
+        "on-secondary-fixed-variant": "#494642",
+        "background": "#fbf9f2",
+        "tertiary-container": "#1d3418",
+        "surface-container-highest": "#e3e3dc",
+        "tertiary": "#081f06",
+        "inverse-on-surface": "#f2f1ea",
+        "on-tertiary-fixed": "#092007",
+        "secondary-container": "#e4dfd9",
+        "inverse-primary": "#cac5c6",
+        "on-primary-container": "#999596",
+        "inverse-surface": "#30312c",
+        "surface-bright": "#fbf9f2",
+        "on-background": "#1b1c18",
+        "on-secondary": "#ffffff",
+        "secondary": "#615e59",
+        "on-tertiary-container": "#829e79",
+        "surface-container-low": "#f5f4ed",
+        "surface-variant": "#e3e3dc",
+        "surface-container": "#efeee7",
+        "error": "#ba1a1a"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-xs": "0.25rem",
+        "space-lg": "1.5rem",
+        "space-md": "1rem",
+        "margin": "2rem",
+        "space-xl": "2.25rem",
+        "gutter": "1.25rem",
+        "space-sm": "0.5rem"
+      },
+      "fontFamily": {
+        "headline-lg": ["Plus Jakarta Sans"],
+        "label-lg": ["Plus Jakarta Sans"],
+        "body-lg": ["Plus Jakarta Sans"],
+        "body-sm": ["Plus Jakarta Sans"],
+        "label-sm": ["Plus Jakarta Sans"],
+        "body-md": ["Plus Jakarta Sans"],
+        "label-md": ["Plus Jakarta Sans"],
+        "headline-sm": ["Plus Jakarta Sans"],
+        "headline-md": ["Plus Jakarta Sans"]
+      },
+      "fontSize": {
+        "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "700"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}],
+        "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}],
+        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+        "headline-sm": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+        "headline-md": ["22px", {"lineHeight": "30px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_16px_rgba(48,46,47,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shadow-[inset_1px_1px_3px_rgba(48,46,47,0.08),inset_-1px_-1px_3px_rgba(255,255,255,0.9)]"><span class="font-headline-sm text-headline-sm tracking-wider text-primary">TF</span></div><div class="flex flex-col"><span class="font-label-lg text-label-lg tracking-wide uppercase text-on-surface">Thrift Fashion Studio</span></div></div><nav class="hidden md:flex items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-low shadow-[inset_1px_1px_3px_rgba(48,46,47,0.05),inset_-1px_-1px_3px_rgba(255,255,255,0.8)]" data-active-classes="bg-surface-container text-on-surface shadow-[inset_2px_2px_5px_rgba(48,46,47,0.08),inset_-2px_-2px_5px_rgba(255,255,255,0.9)]"><a aria-current="page" class="px-space-md py-space-sm rounded-lg font-label-md transition-all bg-surface-container text-on-surface shadow-[inset_2px_2px_5px_rgba(48,46,47,0.08),inset_-2px_-2px_5px_rgba(255,255,255,0.9)]" data-path="produk" href="#">Produk</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="kategori" href="#">Kategori</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="pesanan" href="#">Pesanan</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="customer" href="#">Customer</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.06),inset_-1px_-1px_2px_rgba(255,255,255,0.85)]"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-variant"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Admin</span></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface shadow-[2px_2px_6px_rgba(48,46,47,0.06),-2px_-2px_6px_rgba(255,255,255,0.8)] active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1),inset_-1px_-1px_3px_rgba(255,255,255,0.9)] transition-all" title="Keluar dari sistem" type="button"><span class="material-symbols-outlined text-[18px]">logout</span><span class="font-label-sm text-label-sm">Keluar</span></button></div></div></header><main class="w-full pt-20 bg-background min-h-[calc(100vh-4rem)] max-w-7xl mx-auto px-margin py-margin"><div class="flex flex-col w-full gap-space-lg pb-16">
+<!-- 1. Header & Quick Administrative Overview -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Katalog Toko</span></div>
+<h1 class="font-headline-lg text-headline-lg text-primary">Manajemen Produk</h1>
+
+</div>
+<!-- Administrative Quick Indicators & Primary Action -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-[3px_3px_10px_rgba(48,46,47,0.18),-2px_-2px_8px_rgba(255,255,255,0.9)] hover:bg-primary-container active:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.4)] transition-all" id="btn-open-create" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span class="">+ Tambah Produk Baru</span>
+</button>
+</div>
+</section>
+<!-- Metric Status Bar (Tactile Recessed / Raised Composite Strip) -->
+<!-- Database Architectural Notice Callout (PRD FK Restrict) -->
+<!-- 2. Main Product Catalog Table -->
+<section class="w-full rounded-2xl bg-surface shadow-[6px_6px_18px_rgba(48,46,47,0.05),-6px_-6px_18px_rgba(255,255,255,0.95)] overflow-hidden">
+<!-- Header bar -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-sm shadow-[inset_0_-1px_0_rgba(218,213,207,0.4)]">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">Katalog Pakaian Preloved</span>
+<span class="px-2 py-0.5 rounded-full bg-surface text-secondary font-label-sm text-label-sm shadow-[inset_1px_1px_2px_rgba(48,46,47,0.06),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]">6 Terdaftar</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-on-tertiary-fixed-variant"></span> Tersedia</span><span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Tidak Tersedia</span></div>
+</div>
+<!-- Table Canvas -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container/60 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),inset_0_-1px_0_rgba(218,213,207,0.5)]">
+<th class="py-3.5 px-space-lg font-label-sm text-label-sm uppercase tracking-wider text-secondary w-[340px]">Foto &amp; Identitas Produk</th>
+<th class="py-3.5 px-space-md font-label-sm text-label-sm uppercase tracking-wider text-secondary w-[160px]">Kategori</th>
+<th class="py-3.5 px-space-md font-label-sm text-label-sm uppercase tracking-wider text-secondary min-w-[360px]">Varian Ukuran, Harga &amp; Stok Fisik</th>
+<th class="py-3.5 px-space-md font-label-sm text-label-sm uppercase tracking-wider text-secondary w-[180px]">Status Katalog</th>
+<th class="py-3.5 px-space-lg font-label-sm text-label-sm uppercase tracking-wider text-secondary text-right w-[140px]">Operasi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container"><tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg align-top"><div class="flex items-start gap-space-md"><div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1),inset_-1px_-1px_3px_rgba(255,255,255,0.8)] relative"><img class="w-full h-full object-cover" data-alt="Vintage 90s Carhartt Detroit tan canvas jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd5MLhiukPmq5yTqv9F8C0TxeJbMu1hgwdAF8CRsjb8SyoisoxSAYPVI7SlHJY0khsDgeZ5w5LG9wYRJxgLJsDIy3Swf1N_JOifj-AQVpNq0mWABVo4O4MgVoEVVf5Fa5NV2jZkrli8TPnt8GLzIHzwLSxAWH7RVhd_ZEoDydyUZZJSClBFY_4FUwY9wob4h92O2_4O70UIg8vmrb74wz1vZlZWZ-8st2FLFcKkjRYwWKTp_r-Heki"></div><div class="flex flex-col gap-0.5"><span class="font-mono font-label-sm text-label-sm text-secondary tracking-wider font-semibold">P-001</span><span class="font-label-lg text-label-lg text-primary">Vintage 90s Carhartt Detroit Jacket</span><div class="flex items-center gap-1.5 mt-1.5"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-[1px_1px_2px_rgba(48,46,47,0.06),-1px_-1px_2px_rgba(255,255,255,0.85)]">Men</span><span class="text-secondary font-label-sm text-label-sm text-[10px]">• Duck Canvas 12oz</span></div></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary shadow-[1px_1px_3px_rgba(48,46,47,0.05),-1px_-1px_3px_rgba(255,255,255,0.9)]">Outerwear</span></td><td class="py-space-md px-space-md align-top"><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded bg-surface flex items-center justify-center font-label-md text-label-md text-primary shadow-[1px_1px_2px_rgba(48,46,47,0.05)]">M</span><span class="font-body-sm text-body-sm text-primary">Rp 385.000</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Stok: 1</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded bg-surface flex items-center justify-center font-label-md text-label-md text-primary shadow-[1px_1px_2px_rgba(48,46,47,0.05)]">L</span><span class="font-body-sm text-body-sm text-primary">Rp 410.000</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Stok: 2</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low/60 shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04)]"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded bg-surface flex items-center justify-center font-label-md text-label-md text-secondary">XL</span><span class="font-body-sm text-body-sm text-secondary">Rp 425.000</span></div><span class="font-label-sm text-label-sm text-error font-medium">Stok: 0 • Habis</span></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/50 text-on-tertiary-fixed-variant font-label-sm text-label-sm shadow-[1px_1px_3px_rgba(48,46,47,0.04),-1px_-1px_2px_rgba(255,255,255,0.9)]"><span class="w-2 h-2 rounded-full bg-on-tertiary-fixed-variant"></span> Tersedia</span></td><td class="py-space-md px-space-lg align-top text-right"><div class="inline-flex items-center gap-1"><button class="p-2 rounded-lg bg-surface text-primary shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="openDrawer('P-001', 'Vintage 90s Carhartt Detroit Jacket', 'Outerwear', 'Men', 'Tersedia')" title="Edit Produk" type="button"><span class="material-symbols-outlined text-[18px]">edit_square</span></button><button class="p-2 rounded-lg bg-surface-container/60 text-outline cursor-not-allowed shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04)] opacity-50 transition-all" onclick="triggerDeleteWarning('P-001', 'Vintage 90s Carhartt Detroit Jacket', true)" title="Produk ini sudah pernah dibeli dan tidak dapat dihapus. Ubah status menjadi Tidak Tersedia jika produk tidak ingin ditampilkan." type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button></div></td></tr><tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg align-top"><div class="flex items-start gap-space-md"><div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1),inset_-1px_-1px_3px_rgba(255,255,255,0.8)] relative"><img class="w-full h-full object-cover" data-alt="Japanese pleated olive green corduroy relaxed trousers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6qKtEoR6yeUV8xrSxcyphHys8NQS2ZINMOx0cwJBRkQpWCzStIWugMyPrBzab1l6QlzMv8DymM65HGYW8qI1ObHsSgRavJLiVNQa-0P2l8fwtp-rcHdLUab7XxoBflpBldn2DYy2qA6t_MQ-rqbMW0oODSQFwp81kuW6zur7lIHxZrSip0NT8h5kJasi0dkewdSysQhdeN_OXmPgPmrgRJ_tybvt3OdlfBIXfCOQUHfaeb6Tkjemr"></div><div class="flex flex-col gap-0.5"><span class="font-mono font-label-sm text-label-sm text-secondary tracking-wider font-semibold">P-002</span><span class="font-label-lg text-label-lg text-primary">Japanese Pleated Corduroy Trousers</span><div class="flex items-center gap-1.5 mt-1.5"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-[1px_1px_2px_rgba(48,46,47,0.06),-1px_-1px_2px_rgba(255,255,255,0.85)]">Unisex</span><span class="text-secondary font-label-sm text-label-sm text-[10px]">• Relaxed Fit Olive</span></div></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary shadow-[1px_1px_3px_rgba(48,46,47,0.05),-1px_-1px_3px_rgba(255,255,255,0.9)]">Bawahan</span></td><td class="py-space-md px-space-md align-top"><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded bg-surface flex items-center justify-center font-label-md text-label-md text-primary shadow-[1px_1px_2px_rgba(48,46,47,0.05)]">30</span><span class="font-body-sm text-body-sm text-primary">Rp 175.000</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Stok: 1</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded bg-surface flex items-center justify-center font-label-md text-label-md text-primary shadow-[1px_1px_2px_rgba(48,46,47,0.05)]">32</span><span class="font-body-sm text-body-sm text-primary">Rp 175.000</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Stok: 1</span></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/50 text-on-tertiary-fixed-variant font-label-sm text-label-sm shadow-[1px_1px_3px_rgba(48,46,47,0.04),-1px_-1px_2px_rgba(255,255,255,0.9)]"><span class="w-2 h-2 rounded-full bg-on-tertiary-fixed-variant"></span> Tersedia</span></td><td class="py-space-md px-space-lg align-top text-right"><div class="inline-flex items-center gap-1"><button class="p-2 rounded-lg bg-surface text-primary shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="openDrawer('P-002', 'Japanese Pleated Corduroy Trousers', 'Bawahan', 'Unisex', 'Tersedia')" type="button"><span class="material-symbols-outlined text-[18px]">edit_square</span></button><button class="p-2 rounded-lg bg-surface-container/60 text-outline cursor-not-allowed shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04)] opacity-50 transition-all" onclick="triggerDeleteWarning('P-002', 'Japanese Pleated Corduroy Trousers', true)" title="Produk ini sudah pernah dibeli dan tidak dapat dihapus. Ubah status menjadi Tidak Tersedia jika produk tidak ingin ditampilkan." type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button></div></td></tr><tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg align-top"><div class="flex items-start gap-space-md"><div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1),inset_-1px_-1px_3px_rgba(255,255,255,0.8)] relative"><img class="w-full h-full object-cover" data-alt="Charcoal washed vintage oversized cotton hoodie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbZ6wkp7_RtcmkL_LEsmZ4EGRSOhvSvAuLkfrU3ZKNXQSewg8apmdKmf96kXc341jMYjpg4o0gFho-GL-VxxSdVsicsw2aKeBnuhBZSVUEh2MTnTzOG0WEXIYRaK7jDtX2uIMkJn6Wd62AhvJWhrmtcAH3h3yr-0Kw-ia8C922DP-uGclk2lq8N3ampjWBsJVaQe_0lBt6kSJ5Uj6h8GL0O4Z5755mW9Iqk1r8EglqVJ-JvRdHAGSZ"></div><div class="flex flex-col gap-0.5"><span class="font-mono font-label-sm text-label-sm text-secondary tracking-wider font-semibold">P-003</span><span class="font-label-lg text-label-lg text-primary">Heavyweight Washed Vintage Hoodie</span><div class="flex items-center gap-1.5 mt-1.5"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-[1px_1px_2px_rgba(48,46,47,0.06),-1px_-1px_2px_rgba(255,255,255,0.85)]">Unisex</span><span class="text-secondary font-label-sm text-label-sm text-[10px]">• Washed Cotton</span></div></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary shadow-[1px_1px_3px_rgba(48,46,47,0.05),-1px_-1px_3px_rgba(255,255,255,0.9)]">Atasan</span></td><td class="py-space-md px-space-md align-top"><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"><div class="flex items-center gap-2"><span class="px-2 py-0.5 rounded bg-surface font-label-md text-label-md text-primary shadow-[1px_1px_2px_rgba(48,46,47,0.05)]">Free Size</span><span class="font-body-sm text-body-sm text-secondary">Rp 220.000</span></div><span class="font-label-sm text-label-sm text-error font-medium">Stok: 0 • Habis</span></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-[1px_1px_3px_rgba(48,46,47,0.04),-1px_-1px_2px_rgba(255,255,255,0.9)]"><span class="w-2 h-2 rounded-full bg-secondary"></span> Tidak Tersedia</span></td><td class="py-space-md px-space-lg align-top text-right"><div class="inline-flex items-center gap-1"><button class="p-2 rounded-lg bg-surface text-primary shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="openDrawer('P-003', 'Heavyweight Washed Vintage Hoodie', 'Atasan', 'Unisex', 'Tidak Tersedia')" type="button"><span class="material-symbols-outlined text-[18px]">edit_square</span></button><button class="p-2 rounded-lg bg-surface text-secondary hover:text-error shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="triggerDeleteWarning('P-003', 'Heavyweight Washed Vintage Hoodie')" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button></div></td></tr><tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg align-top"><div class="flex items-start gap-space-md"><div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1),inset_-1px_-1px_3px_rgba(255,255,255,0.8)] relative"><img class="w-full h-full object-cover" data-alt="Earth tone vintage oversized plaid flannel shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLn96sC7AdACBNY6-n0np-cFo6vqi2CUdNuq-p8AzvvHbocZnCVIHGTWmcee5efoXkRcRjwD0wVh23XA7a8MCIoiIhYhTjR1x6HorXaPS8hSgJwoDHkPeJK25O9xKWg4k9cXazf-s41aI7SiGdSZMg3XzBAMGTlyG9i8AH0wZaxmUiE9mG-jqKoM9kAmaym4dfBun3nQr2FWAHeFmqLOoRae_-8O4TLDP_FW_9_klVLAvJ6-uqDq1d"></div><div class="flex flex-col gap-0.5"><span class="font-mono font-label-sm text-label-sm text-secondary tracking-wider font-semibold">P-004</span><span class="font-label-lg text-label-lg text-primary">90s Earth-Tone Plaid Flannel</span><div class="flex items-center gap-1.5 mt-1.5"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-[1px_1px_2px_rgba(48,46,47,0.06),-1px_-1px_2px_rgba(255,255,255,0.85)]">Men</span><span class="text-secondary font-label-sm text-label-sm text-[10px]">• Pure Cotton</span></div></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary shadow-[1px_1px_3px_rgba(48,46,47,0.05),-1px_-1px_3px_rgba(255,255,255,0.9)]">Atasan</span></td><td class="py-space-md px-space-md align-top"><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded bg-surface flex items-center justify-center font-label-md text-label-md text-primary shadow-[1px_1px_2px_rgba(48,46,47,0.05)]">L</span><span class="font-body-sm text-body-sm text-primary">Rp 145.000</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Stok: 1</span></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-[1px_1px_3px_rgba(48,46,47,0.04),-1px_-1px_2px_rgba(255,255,255,0.9)]"><span class="w-2 h-2 rounded-full bg-secondary"></span> Tidak Tersedia</span></td><td class="py-space-md px-space-lg align-top text-right"><div class="inline-flex items-center gap-1"><button class="p-2 rounded-lg bg-surface text-primary shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="openDrawer('P-004', '90s Earth-Tone Plaid Flannel', 'Atasan', 'Men', 'Tidak Tersedia')" type="button"><span class="material-symbols-outlined text-[18px]">edit_square</span></button><button class="p-2 rounded-lg bg-surface text-secondary hover:text-error shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="triggerDeleteWarning('P-004', '90s Earth-Tone Plaid Flannel')" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button></div></td></tr><tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg align-top"><div class="flex items-start gap-space-md"><div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1),inset_-1px_-1px_3px_rgba(255,255,255,0.8)] relative"><img class="w-full h-full object-cover" data-alt="Classic beige double-breasted vintage trench coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3pobcixKJLRe3197Zf-1mllh_v07VjcQhRJ7TvmkC-wjgj74dKC2J2YGwRzOPCwRUtAJVaIG3BGzDLOcraI95u5zf7ydVS96xJPDzrG1bwahB-xo43ZZ3i6OHjttGg0EW11KWS6qQL_VMLKh1C1j0J9WIOToIQ7aTVwuZk86zz-ytYC5hIACoJDdajOl1yRah6rj_fs60I4tFqC_W7df3fignc4bFoFjgzkK-x8l_optuNryK-kC-"></div><div class="flex flex-col gap-0.5"><span class="font-mono font-label-sm text-label-sm text-secondary tracking-wider font-semibold">P-005</span><span class="font-label-lg text-label-lg text-primary">Vintage Belted Minimalist Trench</span><div class="flex items-center gap-1.5 mt-1.5"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-[1px_1px_2px_rgba(48,46,47,0.06),-1px_-1px_2px_rgba(255,255,255,0.85)]">Women</span><span class="text-secondary font-label-sm text-label-sm text-[10px]">• Wool Blend Beige</span></div></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary shadow-[1px_1px_3px_rgba(48,46,47,0.05),-1px_-1px_3px_rgba(255,255,255,0.9)]">Outerwear</span></td><td class="py-space-md px-space-md align-top"><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded bg-surface flex items-center justify-center font-label-md text-label-md text-primary shadow-[1px_1px_2px_rgba(48,46,47,0.05)]">S</span><span class="font-body-sm text-body-sm text-primary">Rp 480.000</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Stok: 1</span></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/50 text-on-tertiary-fixed-variant font-label-sm text-label-sm shadow-[1px_1px_3px_rgba(48,46,47,0.04),-1px_-1px_2px_rgba(255,255,255,0.9)]"><span class="w-2 h-2 rounded-full bg-on-tertiary-fixed-variant"></span> Tersedia</span></td><td class="py-space-md px-space-lg align-top text-right"><div class="inline-flex items-center gap-1"><button class="p-2 rounded-lg bg-surface text-primary shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="openDrawer('P-005', 'Vintage Belted Minimalist Trench', 'Outerwear', 'Women', 'Tersedia')" type="button"><span class="material-symbols-outlined text-[18px]">edit_square</span></button><button class="p-2 rounded-lg bg-surface text-secondary hover:text-error shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="triggerDeleteWarning('P-005', 'Vintage Belted Minimalist Trench')" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button></div></td></tr><tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg align-top"><div class="flex items-start gap-space-md"><div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1),inset_-1px_-1px_3px_rgba(255,255,255,0.8)] relative"><img class="w-full h-full object-cover" data-alt="Heavy knit vintage fisherman beige sweater cardigan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo7b4ybsEvyeYqZVJ2fPi9iScTEyAVlgsEXfgVAcmIomtwxXrkKWEbRYy_ospdpnc6IzmPjnyUVUmtrZ99RWj4DaImwWf2iJDXkFwkajqYqjjEps0Ci16y_ozTG0UTpprZp7lBmC1AE3VT2FaZAN18SzSbDXiUuKTfx-5HwPcx9kmNnRK0ESR3vrPH_iXhqtBiWIQFdFTh_ZTFrEtSI1Bw_izYQXSrT1AKvVold_AAnrSLqWYhZOcg"></div><div class="flex flex-col gap-0.5"><span class="font-mono font-label-sm text-label-sm text-secondary tracking-wider font-semibold">P-006</span><span class="font-label-lg text-label-lg text-primary">Wool Fisherman Cable Knit Cardigan</span><div class="flex items-center gap-1.5 mt-1.5"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-[1px_1px_2px_rgba(48,46,47,0.06),-1px_-1px_2px_rgba(255,255,255,0.85)]">Unisex</span><span class="text-secondary font-label-sm text-label-sm text-[10px]">• Pure Wool 100%</span></div></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary shadow-[1px_1px_3px_rgba(48,46,47,0.05),-1px_-1px_3px_rgba(255,255,255,0.9)]">Rajut &amp; Knitwear</span></td><td class="py-space-md px-space-md align-top"><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(48,46,47,0.04),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded bg-surface flex items-center justify-center font-label-md text-label-md text-primary shadow-[1px_1px_2px_rgba(48,46,47,0.05)]">M</span><span class="font-body-sm text-body-sm text-primary">Rp 265.000</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Stok: 1</span></div></div></td><td class="py-space-md px-space-md align-top"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/50 text-on-tertiary-fixed-variant font-label-sm text-label-sm shadow-[1px_1px_3px_rgba(48,46,47,0.04),-1px_-1px_2px_rgba(255,255,255,0.9)]"><span class="w-2 h-2 rounded-full bg-on-tertiary-fixed-variant"></span> Tersedia</span></td><td class="py-space-md px-space-lg align-top text-right"><div class="inline-flex items-center gap-1"><button class="p-2 rounded-lg bg-surface text-primary shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="openDrawer('P-006', 'Wool Fisherman Cable Knit Cardigan', 'Rajut &amp; Knitwear', 'Unisex', 'Tersedia')" type="button"><span class="material-symbols-outlined text-[18px]">edit_square</span></button><button class="p-2 rounded-lg bg-surface text-secondary hover:text-error shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_5px_rgba(255,255,255,0.85)] hover:bg-surface-container active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="triggerDeleteWarning('P-006', 'Wool Fisherman Cable Knit Cardigan')" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button></div></td></tr></tbody>
+</table>
+</div>
+<!-- Table Bottom Legend / Info -->
+<div class="px-space-lg py-3.5 bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-[inset_0_1px_0_rgba(218,213,207,0.4)]">
+</div>
+</section>
+<!-- 3. Drawer / Realistic Slide-Over Form Modal: Tambah & Edit Produk + Varian -->
+<div class="fixed inset-0 bg-primary/20 backdrop-blur-xs z-50 transition-opacity duration-300 opacity-0 pointer-events-none flex justify-end" id="product-drawer-backdrop">
+<div class="w-full max-w-xl h-full bg-background shadow-[-10px_0_25px_rgba(48,46,47,0.08)] flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out overflow-y-auto" id="product-drawer">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface shadow-[0_2px_10px_rgba(48,46,47,0.04)] flex items-center justify-between sticky top-0 z-20">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary" id="drawer-subtitle">Informasi Produk &amp; Varian Stok</span>
+<h2 class="font-headline-sm text-headline-sm text-primary" id="drawer-title">Tambah Produk Baru</h2>
+</div>
+<button class="w-9 h-9 rounded-lg bg-surface flex items-center justify-center text-secondary hover:text-primary shadow-[2px_2px_6px_rgba(48,46,47,0.06),-2px_-2px_6px_rgba(255,255,255,0.85)] active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="closeDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Form Body -->
+<form class="p-space-lg flex flex-col gap-space-lg flex-1" id="product-form" onsubmit="event.preventDefault(); saveProductAction();">
+<!-- SECTION A: Product Level Entity -->
+<div class="p-space-md rounded-xl bg-surface shadow-[4px_4px_12px_rgba(48,46,47,0.04),-4px_-4px_12px_rgba(255,255,255,0.9)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2 shadow-[inset_0_-1px_0_rgba(218,213,207,0.3)]"><span class="font-label-md text-label-md uppercase tracking-wider text-primary flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">inventory_2</span> Informasi Produk</span></div>
+<!-- Product Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">Deskripsi Produk</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container font-body-md text-body-md text-on-surface placeholder:text-outline shadow-[inset_2px_2px_5px_rgba(48,46,47,0.06),inset_-2px_-2px_5px_rgba(255,255,255,0.8)] focus:outline-hidden focus:shadow-[inset_2px_2px_5px_rgba(48,46,47,0.08),0_0_0_1.5px_#302E2F] transition-all" id="input-product-name" placeholder="Contoh: 90s Heavy Denim Sherpa Jacket" required="" type="text">
+</div>
+<!-- Category Select (Set Null FK) & Target Gender Enum -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between"><label class="font-label-md text-label-md text-primary">Kategori <span class="text-error">*</span></label></div>
+<select class="w-full px-3 py-2.5 rounded-lg bg-surface-container font-body-md text-body-md text-on-surface shadow-[inset_2px_2px_5px_rgba(48,46,47,0.06),inset_-2px_-2px_5px_rgba(255,255,255,0.8)] focus:outline-hidden focus:shadow-[inset_2px_2px_5px_rgba(48,46,47,0.08),0_0_0_1.5px_#302E2F] transition-all" id="select-category"><option value="Outerwear">Outerwear</option><option value="Atasan">Atasan</option><option value="Bawahan">Bawahan</option><option value="Rajut &amp; Knitwear">Rajut &amp; Knitwear</option><option value="Dress &amp; Terusan">Dress &amp; Terusan</option><option value="Aksesori &amp; Tas">Aksesori &amp; Tas</option></select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">Deskripsi Produk</label>
+<div class="flex items-center gap-1 p-1 rounded-lg bg-surface-container shadow-[inset_1px_1px_3px_rgba(48,46,47,0.06),inset_-1px_-1px_3px_rgba(255,255,255,0.8)]">
+<label class="flex-1 text-center cursor-pointer">
+<input checked="" class="peer sr-only" name="product_target" type="radio" value="Men">
+<span class="block py-1 rounded-md font-label-sm text-label-sm text-secondary peer-checked:bg-surface peer-checked:text-primary peer-checked:shadow-[1px_1px_3px_rgba(48,46,47,0.08),-1px_-1px_2px_rgba(255,255,255,0.9)] transition-all">
+                    Men
+                  </span>
+</label>
+<label class="flex-1 text-center cursor-pointer">
+<input class="peer sr-only" name="product_target" type="radio" value="Women">
+<span class="block py-1 rounded-md font-label-sm text-label-sm text-secondary peer-checked:bg-surface peer-checked:text-primary peer-checked:shadow-[1px_1px_3px_rgba(48,46,47,0.08),-1px_-1px_2px_rgba(255,255,255,0.9)] transition-all">
+                    Women
+                  </span>
+</label>
+<label class="flex-1 text-center cursor-pointer">
+<input class="peer sr-only" name="product_target" type="radio" value="Unisex">
+<span class="block py-1 rounded-md font-label-sm text-label-sm text-secondary peer-checked:bg-surface peer-checked:text-primary peer-checked:shadow-[1px_1px_3px_rgba(48,46,47,0.08),-1px_-1px_2px_rgba(255,255,255,0.9)] transition-all">
+                    Unisex
+                  </span>
+</label>
+</div>
+</div>
+</div>
+<!-- Status Ketersediaan Operasional -->
+<div class="flex flex-col gap-1"><label class="font-label-md text-label-md text-primary">Deskripsi Produk</label><select class="w-full px-3 py-2.5 rounded-lg bg-surface-container font-body-md text-body-md text-on-surface shadow-[inset_2px_2px_5px_rgba(48,46,47,0.06),inset_-2px_-2px_5px_rgba(255,255,255,0.8)] focus:outline-hidden focus:shadow-[inset_2px_2px_5px_rgba(48,46,47,0.08),0_0_0_1.5px_#302E2F] transition-all" id="select-status"><option value="Tersedia">Tersedia</option><option value="Tidak Tersedia">Tidak Tersedia</option></select></div>
+<!-- Product Image & Description -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">Deskripsi Produk</label>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-[inset_1px_1px_3px_rgba(48,46,47,0.05),inset_-1px_-1px_3px_rgba(255,255,255,0.8)] flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-surface-container flex items-center justify-center text-secondary shadow-[inset_1px_1px_2px_rgba(48,46,47,0.08)]">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<span class="font-body-sm text-body-sm text-primary font-medium">Unggah Foto Preloved (Maks 2MB)</span>
+<span class="font-body-sm text-[11px] text-secondary">Format WebP / JPG bersudut terang, tanpa watermark.</span>
+<button class="w-fit px-3 py-1 rounded bg-surface text-primary font-label-sm text-label-sm shadow-[1px_1px_3px_rgba(48,46,47,0.08),-1px_-1px_2px_rgba(255,255,255,0.9)] hover:bg-surface-container transition-all" type="button">
+                  Pilih Berkas
+                </button>
+</div>
+</div>
+</div>
+<!-- Deskripsi Produk -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">Deskripsi Produk</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container font-body-md text-body-md text-on-surface placeholder:text-outline shadow-[inset_2px_2px_5px_rgba(48,46,47,0.06),inset_-2px_-2px_5px_rgba(255,255,255,0.8)] focus:outline-hidden focus:shadow-[inset_2px_2px_5px_rgba(48,46,47,0.08),0_0_0_1.5px_#302E2F] transition-all" placeholder="Jelaskan jenis bahan pakaian, potongan (fit), detail saku, dan material lining..." rows="3">Bahan denim tebal 14oz dengan furing sherpa hangat dan kancing kuningan otentik.</textarea>
+</div>
+</div>
+<!-- SECTION B: Nested Variant Manager (1:N Sub-Entity) -->
+<div class="p-space-md rounded-xl bg-surface shadow-[4px_4px_12px_rgba(48,46,47,0.04),-4px_-4px_12px_rgba(255,255,255,0.9)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2 shadow-[inset_0_-1px_0_rgba(218,213,207,0.3)]"><div class="flex flex-col"><span class="font-label-md text-label-md uppercase tracking-wider text-primary flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">straighten</span> Varian Ukuran, Harga &amp; Stok</span><span class="font-body-sm text-[11px] text-secondary mt-0.5">Kelola ukuran, penetapan harga satuan, dan alokasi unit stok</span></div><span class="px-2 py-0.5 rounded bg-surface-container text-primary font-mono text-[11px] shadow-[inset_1px_1px_2px_rgba(48,46,47,0.06)]" id="variant-counter-badge">3 Varian</span></div>
+<!-- Existing Variants List Table Inside Form -->
+<div class="w-full rounded-xl bg-surface-container-low shadow-[inset_1px_1px_3px_rgba(48,46,47,0.05),inset_-1px_-1px_3px_rgba(255,255,255,0.8)] overflow-hidden">
+<table class="w-full text-left border-collapse" id="drawer-variant-table">
+<thead>
+<tr class="shadow-[inset_0_-1px_0_rgba(218,213,207,0.4)] bg-surface-container/40">
+<th class="py-2.5 px-3 font-label-sm text-label-sm text-secondary">Ukuran</th>
+<th class="py-2.5 px-3 font-label-sm text-label-sm text-secondary">Harga Satuan (Rp)</th>
+<th class="py-2.5 px-3 font-label-sm text-label-sm text-secondary">Stok Fisik</th>
+<th class="py-2.5 px-3 font-label-sm text-label-sm text-secondary text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container" id="drawer-variant-tbody"><tr><td class="py-2 px-3"><span class="font-label-md text-label-md text-primary font-semibold">M</span></td><td class="py-2 px-3 font-body-sm text-body-sm text-primary">Rp 385.000</td><td class="py-2 px-3 font-body-sm text-body-sm text-secondary font-medium">Stok: 1</td><td class="py-2 px-3 text-right"><button class="text-secondary hover:text-error transition-colors p-1" onclick="removeVariantRow(this)" title="Hapus varian" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button></td></tr><tr><td class="py-2 px-3"><span class="font-label-md text-label-md text-primary font-semibold">L</span></td><td class="py-2 px-3 font-body-sm text-body-sm text-primary">Rp 410.000</td><td class="py-2 px-3 font-body-sm text-body-sm text-secondary font-medium">Stok: 2</td><td class="py-2 px-3 text-right"><button class="text-outline cursor-not-allowed opacity-40 p-1" disabled="" title="Varian ini sudah digunakan dalam pesanan dan tidak dapat dihapus." type="button"><span class="material-symbols-outlined text-[16px]">close</span></button></td></tr><tr><td class="py-2 px-3"><span class="font-label-md text-label-md text-primary font-semibold">XL</span></td><td class="py-2 px-3 font-body-sm text-body-sm text-primary">Rp 425.000</td><td class="py-2 px-3 font-body-sm text-body-sm text-error font-medium">Stok: 0 • Habis</td><td class="py-2 px-3 text-right"><button class="text-secondary hover:text-error transition-colors p-1" onclick="removeVariantRow(this)" title="Hapus varian" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button></td></tr></tbody>
+</table>
+</div>
+<!-- Inline "+ Tambah Varian Baru" Subform -->
+<div class="p-space-md rounded-xl bg-surface-container shadow-[inset_1px_1px_3px_rgba(48,46,47,0.06),inset_-1px_-1px_3px_rgba(255,255,255,0.85)] flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase font-semibold">+ Tambah Varian Baru ke Daftar</span>
+<div class="grid grid-cols-3 gap-2">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">Deskripsi Produk</label>
+<input class="w-full px-2.5 py-1.5 rounded-md bg-surface text-primary font-body-sm text-body-sm shadow-[inset_1px_1px_2px_rgba(48,46,47,0.06)] focus:outline-hidden" id="new-variant-size" placeholder="Contoh: XXL / 34" type="text">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">Deskripsi Produk</label>
+<input class="w-full px-2.5 py-1.5 rounded-md bg-surface text-primary font-body-sm text-body-sm shadow-[inset_1px_1px_2px_rgba(48,46,47,0.06)] focus:outline-hidden" id="new-variant-price" min="1" placeholder="350000" type="number">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">Deskripsi Produk</label>
+<input class="w-full px-2.5 py-1.5 rounded-md bg-surface text-primary font-body-sm text-body-sm shadow-[inset_1px_1px_2px_rgba(48,46,47,0.06)] focus:outline-hidden" id="new-variant-stock" min="0" placeholder="1" type="number">
+</div>
+</div>
+<button class="w-full mt-1 py-1.5 rounded-lg bg-surface text-primary font-label-sm text-label-sm shadow-[2px_2px_5px_rgba(48,46,47,0.06),-2px_-2px_4px_rgba(255,255,255,0.9)] hover:bg-surface-container-high active:shadow-[inset_1px_1px_2px_rgba(48,46,47,0.1)] transition-all flex items-center justify-center gap-1" onclick="addVariantToDraft()" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Sisipkan Varian
+            </button>
+</div>
+</div>
+<!-- Form Actions Bar -->
+<div class="pt-2 flex items-center justify-end gap-space-md sticky bottom-0 bg-background/95 backdrop-blur-xs py-space-md shadow-[0_-4px_10px_rgba(48,46,47,0.03)]">
+<button class="px-space-lg py-2.5 rounded-lg bg-surface text-secondary hover:text-primary font-label-md text-label-md shadow-[2px_2px_6px_rgba(48,46,47,0.06),-2px_-2px_6px_rgba(255,255,255,0.85)] active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="closeDrawer()" type="button">
+            Batal
+          </button>
+<button class="px-space-xl py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-[3px_3px_10px_rgba(48,46,47,0.18),-2px_-2px_8px_rgba(255,255,255,0.9)] hover:bg-primary-container active:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.4)] transition-all flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span class="">Simpan Produk &amp; Varian</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- 4. Interactive Dialog: Database FK Integrity Protection Modal -->
+<div class="fixed inset-0 bg-primary/30 backdrop-blur-xs z-50 transition-opacity duration-200 opacity-0 pointer-events-none flex items-center justify-center p-4" id="delete-modal-backdrop">
+<div class="w-full max-w-md bg-surface rounded-2xl shadow-[8px_8px_24px_rgba(48,46,47,0.12),-8px_-8px_24px_rgba(255,255,255,0.95)] p-space-lg flex flex-col gap-space-md transform scale-95 transition-all" id="delete-modal-card">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container/60 text-error flex items-center justify-center shadow-[inset_1px_1px_3px_rgba(48,46,47,0.08),inset_-1px_-1px_3px_rgba(255,255,255,0.9)]">
+<span class="material-symbols-outlined text-[26px]">lock_reset</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-error">Validasi Penghapusan</span>
+<h3 class="font-headline-sm text-headline-sm text-primary" id="delete-modal-title">Hapus Produk?</h3>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-[inset_1px_1px_3px_rgba(48,46,47,0.06),inset_-1px_-1px_3px_rgba(255,255,255,0.85)] font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-2" id="delete-modal-content"><p class="text-on-surface">Apakah Anda yakin ingin menghapus produk ini beserta seluruh varian ukurannya?</p><p class="text-[12px] text-secondary">Produk yang belum pernah memiliki pesanan dapat dihapus secara permanen dari katalog.</p></div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-space-md py-2 rounded-lg bg-surface text-primary font-label-md text-label-md shadow-[2px_2px_6px_rgba(48,46,47,0.06),-2px_-2px_6px_rgba(255,255,255,0.85)] active:shadow-[inset_1px_1px_3px_rgba(48,46,47,0.1)] transition-all" onclick="closeDeleteModal()" type="button">
+          Tutup
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-[2px_2px_8px_rgba(186,26,26,0.25)] hover:bg-on-error-container active:shadow-[inset_1px_1px_3px_rgba(0,0,0,0.3)] transition-all" id="btn-confirm-delete" onclick="confirmDeleteExecution()" type="button">
+          Hapus Permanen
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Pill -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-space-lg py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-[4px_4px_16px_rgba(48,46,47,0.25)] flex items-center gap-2 transform translate-y-20 opacity-0 transition-all pointer-events-none" id="toast-notification">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">check_circle</span>
+<span class="" id="toast-message">Operasi berhasil dijalankan</span>
+</div>
+</div>
+<script>
+  // DOM References
+  const drawerBackdrop = document.getElementById('product-drawer-backdrop');
+  const drawerEl = document.getElementById('product-drawer');
+  const btnOpenCreate = document.getElementById('btn-open-create');
+  const drawerTitle = document.getElementById('drawer-title');
+  const drawerSubtitle = document.getElementById('drawer-subtitle');
+  const inputProductName = document.getElementById('input-product-name');
+  const selectCategory = document.getElementById('select-category');
+  const selectStatus = document.getElementById('select-status');
+
+  const deleteModalBackdrop = document.getElementById('delete-modal-backdrop');
+  const deleteModalCard = document.getElementById('delete-modal-card');
+  const deleteModalContent = document.getElementById('delete-modal-content');
+  const deleteModalTitle = document.getElementById('delete-modal-title');
+  const btnConfirmDelete = document.getElementById('btn-confirm-delete');
+
+  const toastNotification = document.getElementById('toast-notification');
+  const toastMessage = document.getElementById('toast-message');
+
+  // Trigger Create Drawer
+  btnOpenCreate.addEventListener('click', () => {
+    drawerTitle.textContent = "Tambah Produk Baru";
+    drawerSubtitle.textContent = "Input Master Produk & Varian Ukuran";
+    inputProductName.value = "";
+    selectCategory.value = "Outerwear";
+    selectStatus.value = "Tersedia";
+    openDrawerUI();
+  });
+
+  function openDrawer(id, name, cat, target, status) {
+    drawerTitle.textContent = "Edit: " + name;
+    drawerSubtitle.textContent = "ID: " + id + " &bull; Perbarui Varian &amp; Stok";
+    inputProductName.value = name;
+    selectCategory.value = cat;
+    if (status === "Tidak Tersedia") {
+      selectStatus.value = "Tidak Tersedia";
+    } else {
+      selectStatus.value = "Tersedia";
+    }
+    
+    // Set Target Radio
+    const radios = document.getElementsByName('product_target');
+    for (let r of radios) {
+      if (r.value === target) r.checked = true;
+    }
+    
+    openDrawerUI();
+  }
+
+  function openDrawerUI() {
+    drawerBackdrop.classList.remove('pointer-events-none', 'opacity-0');
+    drawerBackdrop.classList.add('opacity-100');
+    drawerEl.classList.remove('translate-x-full');
+    drawerEl.classList.add('translate-x-0');
+  }
+
+  function closeDrawer() {
+    drawerEl.classList.remove('translate-x-0');
+    drawerEl.classList.add('translate-x-full');
+    drawerBackdrop.classList.remove('opacity-100');
+    drawerBackdrop.classList.add('opacity-0');
+    setTimeout(() => {
+      drawerBackdrop.classList.add('pointer-events-none');
+    }, 300);
+  }
+
+  // Remove Variant from Table in Drawer
+  function removeVariantRow(btn) {
+    const row = btn.closest('tr');
+    row.remove();
+    updateVariantBadge();
+  }
+
+  // Add Variant Row to Draft Table
+  function addVariantToDraft() {
+    const sizeInput = document.getElementById('new-variant-size');
+    const priceInput = document.getElementById('new-variant-price');
+    const stockInput = document.getElementById('new-variant-stock');
+
+    const sizeVal = sizeInput.value.trim();
+    const priceVal = priceInput.value.trim();
+    const stockVal = stockInput.value.trim();
+
+    if (!sizeVal || !priceVal || stockVal === "") {
+      showToast("Harap isi ukuran, harga, dan jumlah stok varian.");
+      return;
+    }
+
+    const tbody = document.getElementById('drawer-variant-tbody');
+    const tr = document.createElement('tr');
+    
+    const formattedPrice = new Intl.NumberFormat('id-ID').format(priceVal);
+    const stockNum = parseInt(stockVal, 10);
+    const stockClass = stockNum === 0 ? "text-error font-medium" : "text-on-tertiary-fixed-variant font-medium";
+    const stockText = stockNum === 0 ? "0 unit (Habis)" : stockNum + " unit";
+
+    tr.innerHTML = `
+      <td class="py-2 px-3">
+        <span class="font-label-md text-label-md text-primary font-semibold">${escapeHTML(sizeVal)}</span>
+      </td>
+      <td class="py-2 px-3 font-body-sm text-body-sm text-primary">Rp ${formattedPrice}</td>
+      <td class="py-2 px-3 font-body-sm text-body-sm ${stockClass}">${stockText}</td>
+      <td class="py-2 px-3 text-right">
+        <button type="button" onclick="removeVariantRow(this)" class="text-secondary hover:text-error transition-colors p-1" title="Hapus varian">
+          <span class="material-symbols-outlined text-[16px]">close</span>
+        </button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+
+    // Reset inputs
+    sizeInput.value = "";
+    priceInput.value = "";
+    stockInput.value = "";
+    updateVariantBadge();
+  }
+
+  function updateVariantBadge() {
+    const rowCount = document.querySelectorAll('#drawer-variant-tbody tr').length;
+    document.getElementById('variant-counter-badge').textContent = rowCount + " Varian";
+  }
+
+  function saveProductAction() {
+    closeDrawer();
+    showToast("Data master produk dan daftar varian berhasil disimpan.");
+  }
+
+  // Delete Safeguard Logic (PRD FK Restrict verification)
+  function triggerDeleteWarning(productId, productName, hasOrders) {
+    deleteModalTitle.textContent = "Hapus: " + productId;
+
+    if (hasOrders) {
+      deleteModalContent.innerHTML = `
+        <div class="flex items-center gap-2 text-error font-label-md text-label-md">
+          <span class="material-symbols-outlined text-[18px]">gpp_bad</span>
+          <span>Aksi Ditolak oleh Basis Data (RESTRICT)</span>
+        </div>
+        <p>
+          Produk <strong>"${escapeHTML(productName)}"</strong> memiliki rekaman transaksi terkait pada tabel <code>ORDER_DETAIL</code>.
+        </p>
+        <p class="text-[12px] text-secondary">
+          Untuk menjaga integritas rekap nota pembeli, produk ini <strong>tidak dapat dihapus</strong>. Silakan ubah Status Operasional menjadi <strong>"Tidak Tersedia"</strong> untuk mengarsipkannya dari toko.
+        </p>
+      `;
+      btnConfirmDelete.style.display = "none";
+    } else {
+      deleteModalContent.innerHTML = `
+        <div class="flex items-center gap-2 text-primary font-label-md text-label-md">
+          <span class="material-symbols-outlined text-[18px]">warning</span>
+          <span>Konfirmasi Penghapusan Bersih</span>
+        </div>
+        <p>
+          Produk <strong>"${escapeHTML(productName)}"</strong> belum memiliki rekaman pesanan (Order).
+        </p>
+        <p class="text-[12px] text-secondary">
+          Penghapusan akan mengeksekusi penghapusan kaskade pada seluruh entitas varian terkait di tabel <code>PRODUCT_VARIANT</code>. Tindakan ini bersifat permanen.
+        </p>
+      `;
+      btnConfirmDelete.style.display = "inline-flex";
+    }
+
+    deleteModalBackdrop.classList.remove('pointer-events-none', 'opacity-0');
+    deleteModalBackdrop.classList.add('opacity-100');
+    deleteModalCard.classList.remove('scale-95');
+    deleteModalCard.classList.add('scale-100');
+  }
+
+  function closeDeleteModal() {
+    deleteModalCard.classList.remove('scale-100');
+    deleteModalCard.classList.add('scale-95');
+    deleteModalBackdrop.classList.remove('opacity-100');
+    deleteModalBackdrop.classList.add('opacity-0');
+    setTimeout(() => {
+      deleteModalBackdrop.classList.add('pointer-events-none');
+    }, 200);
+  }
+
+  function confirmDeleteExecution() {
+    closeDeleteModal();
+    showToast("Produk dan seluruh varian terkait berhasil dihapus dari sistem.");
+  }
+
+  function showToast(msg) {
+    toastMessage.textContent = msg;
+    toastNotification.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    toastNotification.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toastNotification.classList.remove('translate-y-0', 'opacity-100');
+      toastNotification.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+    }, 3500);
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+    );
+  }
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_4px_rgba(48,46,47,0.03)]"></footer>
+
+
+
+
+</body></html>
