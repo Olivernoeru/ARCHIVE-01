@@ -16,5 +16,8 @@ build.*.log
 # Non-scoped duplicate archive directory (typo; required scope is UI-REFERENCE/)
 UI-REFERANCE/
 
+# Required UI reference documentation kept locally only
+UI-REFERENCE/
+
 # Report file kept locally only
 TASK_4_REPORT.MD
